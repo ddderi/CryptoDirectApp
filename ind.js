@@ -20,10 +20,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/news', (req, res) => {
-    // fetch(`https://min-api.cryptocompare.com/data/v2/news/?lang=EN&${process.env.REACT_APP_RAPID_API_KEY}`)
-    // .then(response => console.log(response))
-
-
+    
     const fetching =  {
         method: 'GET',
         url: 'https://min-api.cryptocompare.com/data/v2/news/?lang=EN&',
