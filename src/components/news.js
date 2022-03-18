@@ -26,8 +26,8 @@ componentDidMount(){
 // for loop, pick 5 random articles and push them into a new array and RENDER() 5 news articles
 
   boucle = () => {
-          let x = Math.floor(Math.random() * 42)
-            for (let i = x;i<(x+8);i++){if(this.state.feeds[i]===undefined){console.log('too long')}
+          let x = Math.floor(Math.random() * 44)
+            for (let i = x;i<(x+6);i++){if(this.state.feeds[i]===undefined){console.log('too long')}
             else{this.state.article.push(this.state.feeds[i])}}
 
             console.log(this.state.article)
