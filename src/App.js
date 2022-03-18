@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Crypto from './components/crypto'
+import News from './components/news'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div className='newsfeed'>
+        <h1>New feed</h1>
+        <News />
+        </div>
+      <div className='mainpage'>
+        <h1>cryptodirect</h1>
+        <p className='navbar'>navbar</p>
+        <Crypto />
+      
+      </div>
+        <div className="fav">
+        <h1>favorite crypto</h1>
+        </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
