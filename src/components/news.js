@@ -11,7 +11,7 @@ this.state = {
 }
 }
 
-// function for request the data news article in the back end http://localhost:8000/news + setstate this.state
+// function for request the data news article in the back end http://localhost:8000/news + setstate this.state !
 
 componentDidMount(){
     const fetching =  {
