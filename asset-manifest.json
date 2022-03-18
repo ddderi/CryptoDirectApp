@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cryptodirect/static/css/main.637aee8c.css",
+    "main.js": "/cryptodirect/static/js/main.2fdc8758.js",
+    "index.html": "/cryptodirect/index.html",
+    "main.637aee8c.css.map": "/cryptodirect/static/css/main.637aee8c.css.map",
+    "main.2fdc8758.js.map": "/cryptodirect/static/js/main.2fdc8758.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.637aee8c.css",
+    "static/js/main.2fdc8758.js"
+  ]
+}
