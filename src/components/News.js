@@ -1,5 +1,5 @@
 import React from 'react'
-import Article from './article.js'
+import Article from './Article.js'
 const axios = require('axios')
 
 export default class News extends React.Component{
@@ -25,7 +25,7 @@ componentDidMount(){
     
 // for loop, pick 5 random articles and push them into a new array and RENDER() 5 news articles
 
-  boucle = () => {
+  randompicknews = () => {
           let x = Math.floor(Math.random() * 44)
             for (let i = x;i<(x+6);i++){if(this.state.feeds[i]===undefined){console.log('too long')}
             else{this.state.article.push(this.state.feeds[i])}}
@@ -39,7 +39,7 @@ componentDidMount(){
         return (
             <div className='feedscontainer'>
                 <ul className='ulnews'> 
-                    {this.state.feeds ? this.boucle() : console.log('scope problems')}
+                    {this.state.feeds ? this.randompicknews() : console.log('scope problems')}
                 </ul>
             </div>
         )}}

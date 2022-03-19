@@ -1,12 +1,10 @@
+// start local server 8000 port. request to put all the data  http://localhost:8000/news with app.get /news
+
 const port = 8000
-//import express, { response } from 'express'
 const express = require('express')
-//import cors from 'cors'
 const cors = require('cors')
-//import axios from 'axios'
 const axios = require('axios')
-//import fetch from "node-fetch";
-//import dotenv  from "dotenv"
+
 require('dotenv').config()
 
 

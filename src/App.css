@@ -18,23 +18,21 @@ body, html, #root {
     justify-content: center;
     /* align-items: center; */
     justify-content: space-evenly;
-    margin: auto;
-    position: absolute;
-    top: 20px;
-    bottom: 20px;
-    
+    margin: 30px 5px;
 }
 
 .mainpage{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    
+    height: auto;
     background-color: #A0D4FF;
     width: 29%;
      border-radius: 10px;
      box-shadow: 1px 1px 20px;
+     max-height: 889.88px;
+    
 
 }
 
@@ -48,19 +46,20 @@ body, html, #root {
 .comp{
     background-color: #A0D4FF;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 90%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;
+    margin-bottom: 10px;
     
 }
 
 .compchild{
-    width: 170px;
-    height: 170px;
-    padding: 5px;
-    margin: 20px;
+    width: 90%;
+    height: 40px;
+    margin: 5px 0px 5px 0;
     background-color: #0077CC;
     box-shadow: 5px 5px 10px;
   box-shadow: 5px 5px 10px rgb(55, 55, 55, 0.85);
@@ -78,6 +77,12 @@ body, html, #root {
     width: 29%;
     border-radius: 10px;
     box-shadow: 1px 1px 20px;
+    max-height: 889.88px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
+    
 }
 
 .newsfeed{
@@ -88,6 +93,7 @@ body, html, #root {
     padding-left: 18px;
     padding-right: 18px;
     box-shadow: 1px 1px 20px;
+    max-height: 889.88px;
 }
 
 .feedscontainer{
@@ -133,13 +139,44 @@ body, html, #root {
   }
 
 
-.h3test{
+.h3article{
     margin: 0;
 }
-.h5test{
+.h5article{
     margin: 0;
     word-break:break-all;
 }
+
+.cryptofav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cryptofavchild{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 40px;
+    margin: 5px 0px 5px 0;
+    background-color: #0077CC;
+    box-shadow: 5px 5px 10px;
+    box-shadow: 5px 5px 10px rgb(55, 55, 55, 0.85);
+    border-radius: 5px;
+    filter: grayscale(40%);
+}
+
+.btnp{
+position: absolute;
+right: 0;
+
+}
+
+
 
 }
 
@@ -161,20 +198,19 @@ body, html, #root {
         /* align-items: center; */
         justify-content: space-evenly;
         margin: auto;
-        position: absolute;
         top: 20px;
     }
 
     .mainpage{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
-        
-        background-color: #A0D4FF;
+         background-color: #A0D4FF;
         width: 29%;
          border-radius: 10px;
          box-shadow: 1px 1px 20px;
+         max-height: 889.88px;
     
     }
 
@@ -187,17 +223,20 @@ body, html, #root {
 .comp{
     background-color: #A0D4FF;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 90%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+    
 }
 
 .compchild{
-    width: 140px;
-    height: 140px;
-    padding: 5px;
-    margin: 10px;
+    width: 90%;
+    height: 40px;
+    margin: 5px 0px 5px 0;
     background-color: #0077CC;
     box-shadow: 5px 5px 10px;
   box-shadow: 5px 5px 10px rgb(55, 55, 55, 0.85);
@@ -217,12 +256,14 @@ body, html, #root {
     padding-left: 13px;
     padding-right: 13px;
     box-shadow: 1px 1px 20px;
+    max-height: 889.88px;
 }
 .fav{
     background-color: #A0D4FF;
     width: 29%;
     border-radius: 10px;
     box-shadow: 1px 1px 20px;
+    max-height: 889.88px;
 }
 
 .feedscontainer{
@@ -264,14 +305,19 @@ body, html, #root {
   }
 
 
-.h3test{
+.h3article{
     margin: 0;
 }
-.h5test{
+.h5article{
     margin: 0;
     word-break:break-all;
     
 }
+.btnp{
+    position: absolute;
+    right: 0;
+    
+    }
 
 
 }
@@ -289,6 +335,7 @@ body, html, #root {
         order: 2;
         margin-top: 7px;
         box-shadow: 1px 1px 20px;
+        max-height: 889.88px;
         
     }
     .fav{
@@ -298,6 +345,7 @@ body, html, #root {
         order: 3;
         margin-top: 15px;
         box-shadow: 1px 1px 20px;
+        max-height: 889.88px;
     }
 
     body, html, #root {
@@ -315,14 +363,13 @@ body, html, #root {
         align-items: center;
         justify-content: space-evenly;
         margin: auto;
-        position: absolute;
         top: 20px;
     }
 
     .mainpage{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* */
         align-items: center;
         order: 1;
         background-color: #A0D4FF;
@@ -330,6 +377,7 @@ body, html, #root {
          border-radius: 10px;
          margin-bottom: 8px;
          box-shadow: 1px 1px 20px;
+         max-height: 889.88px;
     
     }
 /* .navbar{
@@ -341,18 +389,20 @@ body, html, #root {
 .comp{
     background-color: #A0D4FF;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 90%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
     
 }
 
 .compchild{
-    width: 140px;
-    height: 140px;
-    padding: 5px;
-    margin: 10px;
+    width: 90%;
+    height: 40px;
+    margin: 5px 0px 5px 0;
     background-color: #0077CC;
     box-shadow: 5px 5px 10px;
   box-shadow: 5px 5px 10px rgb(55, 55, 55, 0.85);
@@ -403,14 +453,21 @@ body, html, #root {
   }
 
 
-.h3test{
+.h3article{
     margin: 0;
 }
-.h5test{
+.h5article{
     margin: 0;
     word-break:break-all;
     
 }
+.btnp{
+    position: absolute;
+    right: 0;
+    
+    }
+
+
 }
 
 /* media query for tab between 769px and 1024px */
@@ -426,6 +483,7 @@ body, html, #root {
         order: 2;
         margin-top: 7px;
         box-shadow: 1px 1px 20px;
+        max-height: 889.88px;
         
     }
     .fav{
@@ -435,6 +493,7 @@ body, html, #root {
         order: 3;
         margin-top: 15px;
         box-shadow: 1px 1px 20px;
+        max-height: 889.88px;
     }
 
     body, html, #root {
@@ -452,14 +511,13 @@ body, html, #root {
         align-items: center;
         justify-content: space-evenly;
         margin: auto;
-        position: absolute;
         top: 20px;
     }
 
     .mainpage{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         order: 1;
         background-color: #A0D4FF;
@@ -467,6 +525,8 @@ body, html, #root {
          border-radius: 10px;
          margin-bottom: 8px;
          box-shadow: 1px 1px 20px;
+         max-height: 889.88px;
+         
     
     }
 /* .navbar{
@@ -478,18 +538,20 @@ body, html, #root {
 .comp{
     background-color: #A0D4FF;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 90%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
     
 }
 
 .compchild{
-    width: 140px;
-    height: 140px;
-    padding: 5px;
-    margin: 10px;
+    width: 90%;
+    height: 40px;
+    margin: 5px 0px 5px 0;
     background-color: #0077CC;
     box-shadow: 5px 5px 10px;
   box-shadow: 5px 5px 10px rgb(55, 55, 55, 0.85);
@@ -540,13 +602,19 @@ body, html, #root {
   }
 
 
-.h3test{
+.h3article{
     margin: 0;
 }
-.h5test{
+.h5article{
     margin: 0;
     word-break:break-all;
     
 }
+
+.btnp{
+    position: absolute;
+    right: 0;
+    
+    }
 
 }
