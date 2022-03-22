@@ -21,22 +21,20 @@ setFavoritesMP = (newfav) => {
   render(){
   return (
     <div className="main">
+
       <div className='newsfeed'>
-        <h1>New feed</h1>
+        <h1 className='htitle'>New feed</h1>
         <News />
-        </div>
-      <div className='mainpage'>
-          <h1>Cryptodirect</h1>
-          <p className='navbar'>navbar</p>
-      
-          <Mainpage setFavoritesMP={this.setFavoritesMP} /> 
-          
       </div>
-        <div className="fav">
-          <h1>Favorite crypto</h1>
+      <div className='mainpage'>
+          <h1 className='htitle'>Cryptodirect</h1>
+          {/* <p className='navbar'>navbar</p> */}
+          <Mainpage setFavoritesMP={this.setFavoritesMP} /> 
+      </div>
+      <div className="fav">
+          <h1 className='htitle'>Favorite crypto</h1>
           <Favorites favorites={this.state.favorites}/>
-          {/* <button onClick={this.testons}></button> */}
-        </div>
+      </div>
     </div>
   )
 }}
