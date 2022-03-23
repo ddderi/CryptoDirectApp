@@ -30,7 +30,7 @@ componentDidMount(){
 }
 
     
-// for loop, pick 5 random articles and push them into a new array and RENDER() 5 news articles
+// for loop, pick 5 random articles and push them into a new array and RENDER() 5 news articles // not use anymore
 
 //   randompicknews = () => {
 //           let x = Math.floor(Math.random() * 44)
@@ -43,8 +43,9 @@ componentDidMount(){
 //             }
 //         }  
 
+// render all articles 6 by 6
+
 picknews = () => {
-    // console.log(this.state.article)
     return this.state.article.map((element, index) => <li className='liclass' key={index}><Article data={element}/></li>)
 }
 

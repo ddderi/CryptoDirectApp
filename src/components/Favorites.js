@@ -12,6 +12,8 @@ this.state = {
 
 }}
 
+// update our state component when the props fav is changing (when we click on add to my fav)
+
 componentDidUpdate(){
     if(this.state.favorites !== this.props.favorites){
     this.setState({favorites: this.props.favorites, 
@@ -21,6 +23,7 @@ componentDidUpdate(){
     })
 }}
 
+// render each favorite crypto 5 by 5
 
 displayfavcrypto = () => {
     return this.state.favoritesrender.map((element, index) => <FavoritesChild key={index} data={element}/>)

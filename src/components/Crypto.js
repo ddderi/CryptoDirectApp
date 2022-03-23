@@ -17,12 +17,16 @@ callback = () => {
           
     }
 
+// ifthis.props.data.max_supply is not provided, 'Max supply' string wont display
+
 maxsupply = () => {
     if(this.props.data.max_supply!==null){
         return this.props.data.max_supply
         
     }else{return 'unlimited/unknown'}
 }
+
+// fixing the integer after the comma
 
 pricefixed = () => {
     if(this.props.data.quote.USD.price>10){

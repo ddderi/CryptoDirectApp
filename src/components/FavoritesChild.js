@@ -1,32 +1,31 @@
 import React from 'react'
 
 
+function FavoritesChild(props)  {
+          
+          
+const pricefixed = (props) => {
+        if(props.data.quote.USD.price>10){
+        return props.data.quote.USD.price.toFixed(1)
+        }else if(props.data.quote.USD.price<10 && props.data.quote.USD.price>0.95){return props.data.quote.USD.price.toFixed(2)}
+        else if(props.data.quote.USD.price<0.94){return props.data.quote.USD.price.toFixed(3)}
+}
 
-export default class FavoritesChild extends React.Component {
-
-
-    pricefixed = () => {
-        if(this.props.data.quote.USD.price>10){
-            return this.props.data.quote.USD.price.toFixed(1)
-        }else if(this.props.data.quote.USD.price<10 && this.props.data.quote.USD.price>0.95){return this.props.data.quote.USD.price.toFixed(2)}
-        else if(this.props.data.quote.USD.price<0.94){return this.props.data.quote.USD.price.toFixed(3)}
-    }
-
-    render(){
-        return(
+            return (
             <div  className='cryptofavchild'>
-                <p className='pcomp'>{this.props.data.name} :  ${this.pricefixed()} </p>
+                <p className='pcomp'>{props.data.name} : ${pricefixed(props)} </p>
                 <div className="cryptofavchildchild">
                     <p>Mkt/cap dom. : <br/>
-                        {this.props.data.quote.USD.market_cap_dominance.toFixed(2)}%</p>
-                    <p style={this.props.data.quote.USD.percent_change_1h>0 ? {color: 'green'}: {color: 'red'}}>1h % : <br/> 
-                        {this.props.data.quote.USD.percent_change_1h.toFixed(4)}%</p>
-                    <p style={this.props.data.quote.USD.percent_change_24h>0 ? {color: 'green'}: {color: 'red'}}>24h % : <br/>
-                        {this.props.data.quote.USD.percent_change_24h.toFixed(4)}%</p>
-                    <p style={this.props.data.quote.USD.percent_change_7d>0 ? {color: 'green'}: {color: 'red'}}>7d % : <br/>
-                        {this.props.data.quote.USD.percent_change_7d.toFixed(4)}%</p>
+                        {props.data.quote.USD.market_cap_dominance.toFixed(2)}%</p>
+                    <p style={props.data.quote.USD.percent_change_1h>0 ? {color: 'green'}: {color: 'red'}}>1h % : <br/> 
+                        {props.data.quote.USD.percent_change_1h.toFixed(4)}%</p>
+                    <p style={props.data.quote.USD.percent_change_24h>0 ? {color: 'green'}: {color: 'red'}}>24h % : <br/>
+                        {props.data.quote.USD.percent_change_24h.toFixed(4)}%</p>
+                    <p style={props.data.quote.USD.percent_change_7d>0 ? {color: 'green'}: {color: 'red'}}>7d % : <br/>
+                        {props.data.quote.USD.percent_change_7d.toFixed(4)}%</p>
                 </div>
             </div>
-        )
-    }
-}
+            )
+        }
+
+export default FavoritesChild
