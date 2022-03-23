@@ -3,6 +3,11 @@ import React from 'react'
 
 function Article(props){
 
+const tags = {
+    color: 'black'
+}
+
+
 // change date 
 const dateFormat = (props) => {
     var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -10,11 +15,14 @@ const dateFormat = (props) => {
     let finalDate = (newdate.getDate())+' '+(months[newdate.getMonth()])+' '+(newdate.getFullYear())
     return finalDate
 }
+
             return (
                 <div className='parentarticle'>
-                    <h3 className='h3article'><a href={props.data.url}>{props.data.title}</a></h3>
-                    <h5 className='h5article'>Published on : {dateFormat(props)}</h5>
-                    <h5 className='h5article'>Tags: {props.data.tags}</h5>
+                    <a href={props.data.url}>
+                    <h3 className='h3article'>{props.data.title}</h3>
+                    <h5 className='h5article' style={tags}>Published on : {dateFormat(props)}</h5>
+                    <h5 className='h5article' style={tags}>Tags: {props.data.tags}</h5>
+                    </a>
                 </div>    
             )}
         

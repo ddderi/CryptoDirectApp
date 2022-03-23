@@ -16,7 +16,7 @@ const link = {
     render() {
       return (
         <div>
-          <NavLink to="/" exact style={link}>Home</NavLink>
+          <NavLink to="/home" exact style={link}>Home</NavLink>
           <NavLink to="/about" exact style={link}>About</NavLink>
         </div>
       )

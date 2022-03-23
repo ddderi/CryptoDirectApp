@@ -8,7 +8,7 @@ ReactDOM.render((
     
     <Router>
     <Routes>
-        <Route path='/' element={<App />} />
+        <Route exact path='/home' element={<App />} />
         <Route exact path="/about" element={<About />} />
     </Routes>
     </Router>

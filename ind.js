@@ -55,4 +55,4 @@ app.get('/news', (req, res) => {
 
 
 
-app.listen(8000, () => console.log(`serveur is running on port ${port}`))
+app.listen(8000, () => console.log(`serveur is running on port http://localhost${port}`))

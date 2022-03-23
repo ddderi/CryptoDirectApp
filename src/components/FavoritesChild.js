@@ -1,9 +1,21 @@
 import React from 'react'
 
 
-function FavoritesChild(props)  {
-          
-          
+function FavoritesChild(props)  {    
+     
+const button = {
+    position: 'absolute',
+    right: '2px',
+    top: '2px',
+    paddingLeft: '4px',
+    paddingRight: '4px' 
+}
+    
+const click = (props) => {
+    console.log(props)
+}
+
+
 const pricefixed = (props) => {
         if(props.data.quote.USD.price>10){
         return props.data.quote.USD.price.toFixed(1)
@@ -24,6 +36,7 @@ const pricefixed = (props) => {
                     <p style={props.data.quote.USD.percent_change_7d>0 ? {color: 'green'}: {color: 'red'}}>7d % : <br/>
                         {props.data.quote.USD.percent_change_7d.toFixed(4)}%</p>
                 </div>
+                <button onClick={click()} style={button}>X</button>
             </div>
             )
         }
