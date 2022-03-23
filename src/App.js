@@ -3,6 +3,8 @@ import './App.css'
 import Mainpage from './components/Mainpage'
 import News from './components/News'
 import Favorites from './components/Favorites'
+import Navbar from './components/Navbar'
+
 
 export default class App extends React.Component{
 // bring back the new fav with call back function
@@ -28,7 +30,7 @@ setFavoritesMP = (newfav) => {
       </div>
       <div className='mainpage'>
           <h1 className='htitle'>Cryptodirect</h1>
-          {/* <p className='navbar'>navbar</p> */}
+          <Navbar />
           <Mainpage setFavoritesMP={this.setFavoritesMP} /> 
       </div>
       <div className="fav">
