@@ -7,23 +7,28 @@ import Navbar from './components/Navbar'
 
 
 export default class App extends React.Component{
-// bring back the new fav with call back function
-// bug, quand je clique pour fav, cela fetch 6 articles news a nouveau. si je ne ramene pas le new fav dans la main page le bug disparait ??
 
 state = {
   favorites: []
 }
+
+//updated of the favorites states(to add the new favorites crypto in display) from mainpage children
 
 setFavoritesMP = (newfav) => {
   this.setState({favorites: [...this.state.favorites, newfav]})
   
 }
 
+//update of the favorites state(to remove the choosen component) from favorites children
+
+deletefav = (favdelete) => {
+  this.setState({favorites: favdelete})
+}
+
 
   render(){
   return (
     <div className="main">
-
       <div className='newsfeed'>
         <h1 className='htitle'>New feed</h1>
         <News />
@@ -35,11 +40,10 @@ setFavoritesMP = (newfav) => {
       </div>
       <div className="fav">
           <h1 className='htitle'>Favorite crypto</h1>
-          <Favorites favorites={this.state.favorites}/>
+          <Favorites favorites={this.state.favorites} deletefav={this.deletefav}/>
       </div>
     </div>
-  )
-}}
+  )}}
 
 
 

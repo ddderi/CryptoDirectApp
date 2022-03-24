@@ -5,7 +5,6 @@ import About from './components/About'
 import App from './App';
 
 ReactDOM.render((
-    
     <Router>
     <Routes>
         <Route exact path='/home' element={<App />} />
