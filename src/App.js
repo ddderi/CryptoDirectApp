@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Mainpage from './components/Mainpage'
+import MainPage from './components/MainPage'
 import News from './components/News'
 import Favorites from './components/Favorites'
 import Navbar from './components/Navbar'
@@ -36,7 +36,7 @@ deletefav = (favdelete) => {
       <div className='mainpage'>
           <h1 className='htitle'>Cryptodirect</h1>
           <Navbar />
-          <Mainpage setFavoritesMP={this.setFavoritesMP} /> 
+          <MainPage setFavoritesMP={this.setFavoritesMP} /> 
       </div>
       <div className="fav">
           <h1 className='htitle'>Favorite crypto</h1>

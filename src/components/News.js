@@ -45,11 +45,11 @@ componentDidMount(){
 
 // render all articles 6 by 6
 
-picknews = () => {
+Picknews = () => {
     return this.state.article.map((element, index) => <li className='liclass' key={index}><Article data={element}/></li>)
 }
 
-nextpage = () => {
+Nextpage = () => {
     console.log(this.state.nextP)
     this.setState({
         article: this.state.feeds.slice(this.state.nextP,(this.state.nextP+6)),
@@ -61,7 +61,7 @@ nextpage = () => {
      console.log(this.state.displaycrypto)
 }
 
-previouspage = () => {
+Previouspage = () => {
     console.log(this.state.nextP)
     this.setState({
         article: this.state.feeds.slice((this.state.prevP-6),this.state.prevP),
@@ -75,11 +75,11 @@ previouspage = () => {
         return (
             <div className='feedscontainer'>
                 <ul className='ulnews'> 
-                    {this.picknews()}
+                    {this.Picknews()}
                 </ul>
                 <div className="btnpages">
-                    <button className='button' onClick={this.previouspage}>Previous page</button>
-                    <button className='button' onClick={this.nextpage}>Next page</button>
+                    <button className='button' onClick={this.Previouspage}>Previous page</button>
+                    <button className='button' onClick={this.Nextpage}>Next page</button>
                 </div>
                 
             </div>

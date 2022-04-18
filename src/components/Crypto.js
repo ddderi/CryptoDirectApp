@@ -8,6 +8,8 @@ state = {
     fav: []
 }
 
+
+
 //callback function for bring back to its parent Mainpage the state cryptodisplay
 
 callback = () => {
@@ -29,10 +31,11 @@ maxsupply = () => {
 // fixing the integer after the comma
 
 pricefixed = () => {
-    if(this.props.data.quote.USD.price>10){
-        return this.props.data.quote.USD.price.toFixed(1)
-    }else if(this.props.data.quote.USD.price<10 && this.props.data.quote.USD.price>0.95){return this.props.data.quote.USD.price.toFixed(2)}
-    else if(this.props.data.quote.USD.price<0.94){return this.props.data.quote.USD.price.toFixed(3)}
+    let Cryptoprice = this.props.data.quote.USD.price
+    if(Cryptoprice>10){
+        return Cryptoprice.toFixed(1)
+    }else if(Cryptoprice<10 && Cryptoprice>0.95){return Cryptoprice.toFixed(2)}
+    else if(Cryptoprice<0.94){return Cryptoprice.toFixed(3)}
 }
 
 
